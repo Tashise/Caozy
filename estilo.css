@@ -1,0 +1,30 @@
+body{
+    --color-bg: #F7F9F9;
+    --color-text: #000000;
+}
+
+body.dark-theme{
+    --color-bg: rgb(47, 47, 47);
+    --color-text: #F7F9F9;
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+        --color-bg: rgb(47, 47, 47);
+        --color-text: #F7F9F9;
+    }
+
+    body.Light-theme {
+        --color-bg: #F7F9F9;
+        --color-text: #000000;
+    }
+}
+
+body{
+    background-color: var(--color-bg);
+}
+
+h2{
+    text-align: center;
+    color: var(--color-text)
+}
